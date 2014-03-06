@@ -57,7 +57,8 @@ PRODUCT_PACKAGES += \
     loki_patch \
     loki_flash \
     loki.sh \
-    loki_bootloaders
+    loki_bootloaders \
+    unlocked_bootloaders
 
 # GPS
 PRODUCT_PACKAGES += \
