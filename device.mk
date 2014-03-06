@@ -19,6 +19,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 ## (2) Also get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/jflte/jflte-vendor.mk)
 
+# aojp common
+$(call inherit-product-if-exists, vendor/aojp/config/aojp.mk)
+
 ## overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/jflte/overlay
 
@@ -47,10 +50,6 @@ PRODUCT_COPY_FILES += \
 # Media Profile
 PRODUCT_COPY_FILES += \
     device/samsung/jflte/media/media_profiles.xml:system/etc/media_profiles.xml
-
-# ramdisk for felica
-PRODUCT_COPY_FILES += \
-    device/samsung/jflte/rootdir/etc/sbin/felica_init.sh:root/sbin/felica_init.sh
 
 # loki
 PRODUCT_PACKAGES += \
