@@ -48,6 +48,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/samsung/jflte/media/media_profiles.xml:system/etc/media_profiles.xml
 
+# ramdisk for felica
+PRODUCT_COPY_FILES += \
+    device/samsung/jflte/rootdir/etc/sbin/felica_init.sh:root/sbin/felica_init.sh
+
 # loki
 PRODUCT_PACKAGES += \
     loki_patch \
