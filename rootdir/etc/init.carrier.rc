@@ -25,7 +25,20 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+on post-fs-data
+# FeliCa
+    exec /system/bin/sh /sbin/felica_init.sh
+# NFC
+    symlink /dev/felica_cen /dev/snfc_cen
+
 on boot
+
+# FeliCa
+    mkdir /efs/FeliCaLock 0777 system 9004
+    chown 9004 9004 /efs/FeliCaLock/01
+    chmod 0666 /efs/FeliCaLock/01
+    chown 9004 9004 /efs/FeliCaLock/02
+    chmod 0666 /efs/FeliCaLock/02
 
 # permissions for bluetooth.
     setprop ro.bt.bdaddr_path "/efs/bluetooth/bt_addr"
@@ -41,3 +54,16 @@ on boot
 	chown radio system /sys/class/sec/switch/usb_state
 	chown radio system /sys/class/sec/switch/uart_sel
 	chown radio system /sys/class/sec/switch/apo_factory
+
+# Felica
+service mfsc /system/bin/mfsc
+    class main
+    user root
+    group system
+    oneshot
+
+service mfdp /system/bin/mfdp
+    class main
+    user root
+    group system
+    oneshot
