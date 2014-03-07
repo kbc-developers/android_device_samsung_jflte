@@ -22,6 +22,9 @@ $(call inherit-product-if-exists, vendor/samsung/jflte/jflte-vendor.mk)
 ## overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/jflte/overlay
 
+## overlays for dcm
+DEVICE_PACKAGE_OVERLAYS += device/samsung/jflte/overlay-dcm
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
