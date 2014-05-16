@@ -2614,16 +2614,16 @@ SectionDevice
     EnableSequence
         'SLIM_0_TX Channels':0:One
         'SLIM TX7 MUX':0:DEC3
-        'DEC3 MUX':0:ADC4
-        'ADC4 Volume':1:100
-        'DEC3 Volume':2:67.7%
+        'DEC4 MUX':0:ADC4
+        'ADC3 Volume':1:100
+        'DEC4 Volume':2:84%
         'MICBIAS3 CAPLESS Switch':1:1
     EndSequence
 
     DisableSequence
         'SLIM TX7 MUX':0:ZERO
-        'DEC3 MUX':0:ZERO
-        'ADC4 Volume':1:0
+        'DEC4 MUX':0:ZERO
+        'ADC3 Volume':1:0
         'MICBIAS3 CAPLESS Switch':1:0
     EndSequence
 
@@ -2660,16 +2660,16 @@ SectionDevice
     EnableSequence
         'SLIM_0_TX Channels':0:One
         'SLIM TX7 MUX':0:DEC3
-        'DEC3 MUX':0:ADC4
-        'ADC4 Volume':1:100
-        'DEC3 Volume':2:67.7%
+        'DEC4 MUX':0:ADC4
+        'ADC3 Volume':1:100
+        'DEC4 Volume':2:84%
         'MICBIAS3 CAPLESS Switch':1:1
     EndSequence
 
     DisableSequence
         'SLIM TX7 MUX':0:ZERO
-        'DEC3 MUX':0:ZERO
-        'ADC4 Volume':1:0
+        'DEC4 MUX':0:ZERO
+        'ADC3 Volume':1:0
         'MICBIAS3 CAPLESS Switch':1:0
     EndSequence
 
@@ -2684,16 +2684,16 @@ SectionDevice
     EnableSequence
         'SLIM_0_TX Channels':0:One
         'SLIM TX7 MUX':0:DEC3
-        'DEC3 MUX':0:ADC4
-        'ADC4 Volume':1:100
-        'DEC3 Volume':2:67.7%
+        'DEC4 MUX':0:ADC4
+        'ADC3 Volume':1:100
+        'DEC4 Volume':2:84%
         'MICBIAS3 CAPLESS Switch':1:1
     EndSequence
 
     DisableSequence
         'SLIM TX7 MUX':0:ZERO
-        'DEC3 MUX':0:ZERO
-        'ADC4 Volume':1:0
+        'DEC4 MUX':0:ZERO
+        'ADC3 Volume':1:0
         'MICBIAS3 CAPLESS Switch':1:0
     EndSequence
 
@@ -2708,16 +2708,16 @@ SectionDevice
     EnableSequence
         'SLIM_0_TX Channels':0:One
         'SLIM TX7 MUX':0:DEC3
-        'DEC3 MUX':0:ADC4
-        'ADC4 Volume':1:100
-        'DEC3 Volume':2:67.7%
+        'DEC4 MUX':0:ADC4
+        'ADC3 Volume':1:100
+        'DEC4 Volume':2:84%
         'MICBIAS3 CAPLESS Switch':1:1
     EndSequence
 
     DisableSequence
         'SLIM TX7 MUX':0:ZERO
-        'DEC3 MUX':0:ZERO
-        'ADC4 Volume':1:0
+        'DEC4 MUX':0:ZERO
+        'ADC3 Volume':1:0
         'MICBIAS3 CAPLESS Switch':1:0
     EndSequence
 
