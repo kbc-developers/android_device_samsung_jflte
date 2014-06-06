@@ -153,8 +153,6 @@ void vendor_load_properties()
         property_set("ro.build.description", "jfltedcm-user 4.3 JSS15J SC04EOMUBNB1 release-keys");
         property_set("ro.product.model", "SC-04E");
         property_set("ro.product.device", "jfltedcm");
-        property_set("telephony.lteOnGsmDevice", "1");
-        property_set("ro.telephony.default_network", "9");
         property_set("ro.product.locale.language", "ja");
         property_set("ro.product.locale.region", "JP");
         property_set("ro.config.libemoji", "libemoji_docomo.so");
