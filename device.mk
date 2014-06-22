@@ -88,6 +88,9 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
+PRODUCT_COPY_FILES += \
+    device/samsung/jflte/rootdir/etc/twrp.fstab:recovery/root/etc/twrp.fstab
+
 # Torch
 PRODUCT_PACKAGES += Torch
 
