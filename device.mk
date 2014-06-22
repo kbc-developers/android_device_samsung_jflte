@@ -202,7 +202,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.rild.nitz_short_ons_2="" \
     persist.rild.nitz_short_ons_3="" \
     ro.telephony.ril.v3=newDriverCall \
-    dalvik.vm.dexopt-data-only=0
+    dalvik.vm.dexopt-data-only=0 \
+    persist.sys.strictmode.visual=0 \
+    persist.sys.strictmode.disable=1
 
 # call common msm8960
 $(call inherit-product, device/samsung/msm8960-common/msm8960.mk)
