@@ -107,6 +107,9 @@ COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 HAVE_ADRENO_SOURCE := false
 
+# GPS
+BOARD_HAVE_NEW_QC_GPS := true
+
 # NFC
 BOARD_NFC_HAL_SUFFIX := msm8960
 
@@ -139,6 +142,7 @@ TARGET_NEED_CAMERA_ZSL := true
 TARGET_NEED_SAMSUNG_MAGIC_ZSL_1508 := true
 TARGET_ADD_ISO_MODE_1600 := true
 TARGET_ADD_ISO_MODE_HJR := true
+TARGET_DISABLE_ZSL_FOR_FFC := true
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := jflte,jfltexx,i9505,GT-I9505,jgedlte,i9505g,GT-I9505G,jfltevzw,jfltespr,jflterefreshspr,jfltetmo,jfltecri,jfltecsp,jflteatt,jfltecan,jflteusc,jfltezm,jfltedcm
