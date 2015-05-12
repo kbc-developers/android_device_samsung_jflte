@@ -16,9 +16,15 @@
 
 # Get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/jflte/jflte-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/jfltedcm/jfltedcm-vendor.mk)
+
+# default locale
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.product.locale.language=ja \
+    ro.product.locale.region=JP
 
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-dcm
 
 # Inherit from jf-common
 $(call inherit-product, device/samsung/jf-common/jf-common.mk)
